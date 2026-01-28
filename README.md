@@ -1,2 +1,2 @@
 # shopping-demo
-To be deployed to Azure Static Web App resource
+Sample HTML site to be deployed to Azure Static Web App resource
