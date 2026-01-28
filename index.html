@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shopping Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="brand">🛒 Shopping Demo</div>
+    <button class="cart-btn" id="openCartBtn">
+      Cart (<span id="cartCount">0</span>)
+    </button>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Simple E-Commerce Demo</h1>
+      <p>For Azure scaling practice: browse products, add to cart, and “checkout”.</p>
+    </section>
+
+    <section class="grid" id="productGrid"></section>
+  </main>
+
+  <!-- Cart Drawer -->
+  <aside class="cart" id="cartDrawer" aria-hidden="true">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button class="icon-btn" id="closeCartBtn">✖</button>
+    </div>
+
+    <div id="cartItems" class="cart-items"></div>
+
+    <div class="cart-footer">
+      <div class="total-row">
+        <span>Total:</span>
+        <strong>₹ <span id="cartTotal">0</span></strong>
+      </div>
+      <button class="btn" id="checkoutBtn">Fake Checkout</button>
+      <button class="btn btn-secondary" id="clearCartBtn">Clear Cart</button>
+      <p class="note">*This is a demo. No real payments.</p>
+    </div>
+  </aside>
+
+  <div class="backdrop" id="backdrop" hidden></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
